@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
       # The judge takes OutLayer's SDK as a path dependency until 0.2.2 is on crates.io.
       - run: git clone --depth 1 https://github.com/out-layer/outlayer ../near-offshore
-      - run: rustup show
+      - run: rustup show && rustup component add clippy
         working-directory: module
       - run: cargo test
         working-directory: module
