@@ -25,9 +25,9 @@
 .report-step { margin: 0 0 40px; padding-top: 24px; border-top: 1px solid var(--border); scroll-margin-top: 12px; }
 .report-step h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; margin: 0 0 10px; }
 .step-n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--surface-2); border: 1px solid var(--border-strong); display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: var(--accent); }
-.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin: 14px 0; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin: 14px 0; }
 .shots figure { margin: 0; }
-.shots figure img { display: block; width: 100%; height: auto; aspect-ratio: 985 / 813; object-fit: cover; object-position: top; border-radius: 8px; border: 1px solid var(--border); }
+.shots figure img { display: block; width: 100%; height: auto; aspect-ratio: 1456 / 835; object-fit: contain; background: var(--surface); border-radius: 8px; border: 1px solid var(--border); }
 .shots a { cursor: zoom-in; }
 .shot-view { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; overflow: visible; cursor: zoom-out; text-align: center; }
 .shot-view::backdrop { background: rgba(0, 0, 0, 0.88); }
@@ -71,3 +71,4 @@ h5 { margin: 14px 0 8px; font-size: 13px; color: var(--muted); font-weight: 600;
   .evidence dl, .task dl > div { grid-template-columns: 1fr; gap: 2px 0; }
   .evidence dd { margin-bottom: 8px; }
 }
+.shots figcaption a { margin-left: 6px; white-space: nowrap; }

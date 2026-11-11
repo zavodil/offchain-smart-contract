@@ -74,7 +74,7 @@ function txLink(tx: string) {
 
 const pct = (bp: number) => `${(bp / 100).toFixed(2)}%`;
 
-function Shots({ shots }: { shots: [string, string][] }) {
+function Shots({ shots, tx }: { shots: [string, string][]; tx?: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [open, setOpen] = useState<[string, string] | null>(null);
   useEffect(() => {
@@ -95,7 +95,14 @@ function Shots({ shots }: { shots: [string, string][] }) {
           >
             <img src={`shots/${file}`} alt={caption} loading="lazy" />
           </a>
-          <figcaption>{caption}</figcaption>
+          <figcaption>
+            {caption}
+            {tx && !file.includes('recheck') && (
+              <a href={`${txLink(tx)}${file.includes('sealed') || file.includes('denied') ? '/execution' : '/tree'}`} target="_blank" rel="noreferrer">
+                Open on NearBlocks ↗
+              </a>
+            )}
+          </figcaption>
         </figure>
       ))}
       <dialog ref={dialog} className="shot-view" onClick={() => dialog.current?.close()} onClose={() => setOpen(null)}>
@@ -235,7 +242,7 @@ function Step({ step, build }: { step: RunStep; build: GateBuild | null }) {
         {step.title}
       </h3>
       <p>{step.story}</p>
-      <Shots shots={SHOTS[step.id] ?? []} />
+      <Shots shots={SHOTS[step.id] ?? []} tx={step.tx} />
       <Outcome step={step} />
       <Recheck step={step} build={build} />
     </section>
