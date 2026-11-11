@@ -215,21 +215,12 @@ it needs their keys in `~/.near-credentials/testnet`.
    call it with the deposit from OutLayer's `estimate_execution_cost` and
    300 TGas.
 
-## Hackathon scope
-
-Everything in this repository was written for NEAR HACKATHON, after its
-announcement: the policy gate, the judge, the grant fund, the
-prediction-market factory, the rulebooks and their calibration, the report and
-its tools. The project builds on, and does not include:
+## Built on
 
 - **OutLayer**: the TEE execution, the keystore and NEAR MPC key derivation,
   attestations, and the SDK the judge uses;
-- **NEAR AI Cloud**: the Sage compliance model;
+- **NEAR AI Cloud**: the Sage decision model;
 - the publish-only policy registry contract `policies.zavodil.testnet`.
-
-Disclosure, as the rules require: the author also entered
-[Provable AI Compliance](https://github.com/zavodil/near-attested-ai). The two
-projects are independent.
 
 ## License
 
