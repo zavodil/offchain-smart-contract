@@ -170,6 +170,8 @@ h5 { margin: 14px 0 8px; font-size: 13px; color: var(--muted); font-weight: 600;
 .kicker { color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px; }
 .report-section > h2 { font-size: 26px; line-height: 1.25; max-width: 860px; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 14px; }
+@media (max-width: 820px) { .three { grid-template-columns: 1fr; } }
 .punch { font-size: 17px; color: var(--text) !important; max-width: 860px !important; border-left: 3px solid var(--accent); padding-left: 14px; }
 .how { list-style: none; padding: 0; margin: 8px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; counter-reset: how; }
 .how li { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 16px 14px; }

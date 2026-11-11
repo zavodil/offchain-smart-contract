@@ -59,19 +59,23 @@ export function Landing() {
         <Hero />
       </header>
 
-      <Section kicker="The problem" title="Contracts can move money but can't read. Models can read but can't be trusted with money.">
-        <div className="two">
+      <Section kicker="The problem" title="Smart contracts are still in the pre-AI era">
+        <div className="three">
           <div className="report-card">
-            <h4>A smart contract cannot read</h4>
-            <p>A grant fund cannot tell an art show from a food festival. A market factory cannot tell a price bet from an assassination market. Today a server reads the text, and the contract takes its word.</p>
+            <h4>A contract cannot leave its chain</h4>
+            <p>It cannot call a model, fetch a document, open an API, keep a secret or work longer than one block. It can store an application's text, but not judge what it means: a grant fund cannot tell an art show from a food festival, a market factory cannot tell a price bet from an assassination market.</p>
+          </div>
+          <div className="report-card">
+            <h4>So a server decides for it</h4>
+            <p>Oracles, keepers, relayers, a "trusted backend", a multisig that signs what the backend says. The server reads, calls the AI, and tells the audited, immutable contract what to do.</p>
           </div>
           <div className="report-card">
             <h4>A model's opinion is not a decision</h4>
-            <p>A prompt can steer it, and whoever runs it can change it. Nobody should let a chatbot sign a payment.</p>
+            <p>A prompt can steer it, and whoever runs it can change it. Nobody should let a chatbot sign a payment on a server's word.</p>
           </div>
         </div>
         <p className="punch">
-          An <strong>off-chain smart contract</strong> keeps both halves honest: a model reads inside an Intel TDX enclave, under a rulebook fixed on NEAR, and the contract settles on the signed verdict in the same transaction.
+          The contract is the strongest part of the system, and it takes orders from the weakest one. An <strong>off-chain smart contract</strong> removes that server: the computation leaves the chain, the guarantees stay.
         </p>
       </Section>
 
@@ -86,6 +90,9 @@ export function Landing() {
             </li>
           ))}
         </ol>
+        <p className="punch">
+          For the developer it is one cross-contract call. No oracle network, no callback server, no second transaction: NEAR's yield/resume keeps the transaction open while the enclave works, and the contract continues with the answer.
+        </p>
       </Section>
 
       <Section kicker="The model" title="Sage: a model that answers yes or no, not prose">
