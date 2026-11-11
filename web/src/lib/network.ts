@@ -31,8 +31,9 @@ export const DEMO = {
   policies: 'policies.zavodil.testnet',
   fund: 'digital-art-fund.testnet',
   council: 'council.digital-art-fund.testnet',
-  launchpad: 'meme-launchpad-ai.testnet',
-  moderator: 'moderator.meme-launchpad-ai.testnet',
+  token: 'usdc.fakes.testnet',
+  markets: 'ai-prediction-markets.testnet',
+  moderator: 'moderator.ai-prediction-markets.testnet',
 };
 
 /** What the judge signs before a verdict's message. */

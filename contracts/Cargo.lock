@@ -810,15 +810,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f52b00d39961fc5b2736ea853c9cc86238e165017a493d1d5c8eac6bdc4cc273"
 
 [[package]]
-name = "meme-launchpad"
-version = "0.1.0"
-dependencies = [
- "near-sdk",
- "policy-gate-interface",
- "schemars 0.8.22",
-]
-
-[[package]]
 name = "memory_units"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1220,6 +1211,15 @@ name = "powerfmt"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391"
+
+[[package]]
+name = "prediction-markets"
+version = "0.1.0"
+dependencies = [
+ "near-sdk",
+ "policy-gate-interface",
+ "schemars 0.8.22",
+]
 
 [[package]]
 name = "primitive-types"

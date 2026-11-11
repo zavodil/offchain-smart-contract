@@ -29,7 +29,7 @@ describe('the verdicts in the evidence', () => {
     for (const step of signedSteps) {
       const v: Verdict = JSON.parse(step.signed.message);
       expect(v.gate).toBe(run.deployment.gate);
-      expect([run.deployment.fund, run.deployment.launchpad, step.signer]).toContain(v.for);
+      expect([run.deployment.fund, run.deployment.markets, step.signer]).toContain(v.for);
       expect(v.pack).toMatch(/^[a-z0-9-]+\/[a-z0-9-]+@\d+$/);
       expect(v.decision === 'pass').toBe(v.fired.length === 0);
     }

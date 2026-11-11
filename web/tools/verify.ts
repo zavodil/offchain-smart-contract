@@ -9,7 +9,7 @@
  *   the gate    — the judge build it is fixed to is the wasm FastFS serves,
  *                 byte for byte; its keys came from that build; whether any
  *                 key can still change the gate's code;
- *   every verdict the grant fund and the launchpad stored —
+ *   every verdict the grant fund and the market factory stored —
  *                 ed25519 by the pinned build over its exact bytes; accepted by
  *                 the gate's own `verify`; the rulebook is the registry's, by
  *                 hash; Intel signed the TDX quote of the run that produced it,
@@ -90,9 +90,9 @@ async function main() {
 
   const stored: { where: string; id: number; signed: Signed }[] = [];
   const applications = await view<Stored[]>(TESTNET, DEMO.fund, 'applications', { from: 0, limit: 50 });
-  const launches = await view<Stored[]>(TESTNET, DEMO.launchpad, 'launches', { from: 0, limit: 50 });
+  const markets = await view<Stored[]>(TESTNET, DEMO.markets, 'markets', { from: 0, limit: 50 });
   for (const a of applications) if (a.verdict_message && a.verdict_signature) stored.push({ where: `${DEMO.fund} application ${a.id}`, id: a.id, signed: { message: a.verdict_message, signature: a.verdict_signature } });
-  for (const l of launches) if (l.verdict_message && l.verdict_signature) stored.push({ where: `${DEMO.launchpad} launch ${l.id}`, id: l.id, signed: { message: l.verdict_message, signature: l.verdict_signature } });
+  for (const m of markets) if (m.verdict_message && m.verdict_signature) stored.push({ where: `${DEMO.markets} market ${m.id}`, id: m.id, signed: { message: m.verdict_message, signature: m.verdict_signature } });
 
   const proofs: (ProofGroup & { where: string })[] = [];
   let failed = gate.some((s) => s.verdict === 'fail');

@@ -261,7 +261,7 @@ mod tests {
     fn the_published_rulebooks_parse() {
         for (name, bytes) in [
             ("grants/digital-art@2", include_str!("../../packs/grants-digital-art@2.json")),
-            ("memecoins/launch@2", include_str!("../../packs/memecoins-launch@2.json")),
+            ("markets/listing@1", include_str!("../../packs/markets-listing@1.json")),
         ] {
             let pack = Pack::parse(bytes.as_bytes()).unwrap_or_else(|e| panic!("{name}: {e}"));
             assert_eq!(PackRef::parse(name).unwrap(), PackRef { id: pack.id.clone(), version: pack.version });

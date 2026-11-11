@@ -1,5 +1,5 @@
 {
-  "when": "2026-11-11T18:38:24.718Z",
+  "when": "2026-11-11T20:13:43.499Z",
   "build": {
     "outlayer": "outlayer.testnet",
     "wasm_url": "https://test.fastfs.io/outlayer-alice.testnet/outlayer.testnet/e2b5fb1daa521dcca23633757aa69844f0c5908a3ae99c361ca75eb23e5a4e01.wasm",
@@ -29,9 +29,9 @@
   ],
   "proofs": [
     {
-      "id": "ai-policy-gate.testnet#1",
+      "id": "ai-policy-gate.testnet#34",
       "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 1 for digital-art-fund.testnet · OutLayer request 24196",
+      "subtitle": "request 34 for digital-art-fund.testnet · OutLayer request 24909",
       "verdict": "pass",
       "steps": [
         {
@@ -92,7 +92,7 @@
         },
         {
           "label": "Text sha256",
-          "value": "32197500…6fb8acaf",
+          "value": "22c5e4b7…c5b0a38a",
           "mono": true
         },
         {
@@ -103,31 +103,31 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":1,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277247348,\"text_sha256\":\"32197500a6791459de73ebc77501ff6fd78b4ac804cc80c5497af5a36fb8acaf\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24196\",\"at\":1794418857}",
-          "signature": "1604a910b3ffe9081aed2a1ab58f4095d3e53883a5014772c7bd7fd52ce9faab189a1754b56389a1791cf6645bfec77e7641344218b93c787ab1fdcea1ef9901"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":34,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257165,\"text_sha256\":\"22c5e4b754e0dee6c47414444ee90141ba600540e4cad97e1209dc20c5b0a38a\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24909\",\"at\":1794424640}",
+          "signature": "f992a380c389b36811346d58155ecdf39aad93934de93943638b390eea17c7eefabe49a84728a9828d688c9cbb5665083984eb9a5d771b2e189d87eededa2308"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 1,
+          "request": 34,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277247348,
-          "text_sha256": "32197500a6791459de73ebc77501ff6fd78b4ac804cc80c5497af5a36fb8acaf",
+          "block_height": 277257165,
+          "text_sha256": "22c5e4b754e0dee6c47414444ee90141ba600540e4cad97e1209dc20c5b0a38a",
           "decision": "pass",
           "fired": [],
-          "outlayer_request": "24196",
-          "at": 1794418857
+          "outlayer_request": "24909",
+          "at": 1794424640
         }
       },
       "where": "digital-art-fund.testnet application 0"
     },
     {
-      "id": "ai-policy-gate.testnet#2",
+      "id": "ai-policy-gate.testnet#35",
       "title": "BLOCK · grants/digital-art@2",
-      "subtitle": "request 2 for digital-art-fund.testnet · OutLayer request 24200",
+      "subtitle": "request 35 for digital-art-fund.testnet · OutLayer request 24913",
       "verdict": "pass",
       "steps": [
         {
@@ -146,11 +146,6 @@
           "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
         },
         {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
           "label": "Intel signed this quote",
           "verdict": "pass",
           "detail": "Genuine Intel TDX hardware, TCB up to date"
@@ -167,8 +162,8 @@
         },
         {
           "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
+          "verdict": "skip",
+          "detail": "the text is not known to this check"
         },
         {
           "label": "The run's attested output is this verdict",
@@ -184,11 +179,11 @@
       "facts": [
         {
           "label": "Fired",
-          "value": "off_theme 98.87%"
+          "value": "off_theme 99.83%"
         },
         {
           "label": "Text sha256",
-          "value": "88963ee8…903e5b37",
+          "value": "888c3fa1…f101e73a",
           "mono": true
         },
         {
@@ -199,36 +194,36 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":2,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277247390,\"text_sha256\":\"88963ee8376e136e9811cfebda53ae1ad6238c06ee63b14c1cf0e58f903e5b37\",\"decision\":\"block\",\"fired\":[{\"rule\":\"off_theme\",\"bp\":9887}],\"outlayer_request\":\"24200\",\"at\":1794418882}",
-          "signature": "5c81ca229a0d8de081f9f76a4fea01a11a35cd38a8a8856c1a1a8840dece487a69e4f715ab7c47ec6b79c7bcc08e907be9ea108d2ad09023185a3ed867d0930d"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":35,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257196,\"text_sha256\":\"888c3fa150a7d12c2d2385864fc6c48a6999796e542a4f9b663b22d2f101e73a\",\"decision\":\"block\",\"fired\":[{\"rule\":\"off_theme\",\"bp\":9983}],\"outlayer_request\":\"24913\",\"at\":1794424660}",
+          "signature": "779e544caa3601da6a2c72d3b7ebf856a91ac7d111e927c8ae084b79b0851cc51b87e8f540edf428b6e7035c65466d941918f178d5747f6f19941d9cfce2290a"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 2,
+          "request": 35,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277247390,
-          "text_sha256": "88963ee8376e136e9811cfebda53ae1ad6238c06ee63b14c1cf0e58f903e5b37",
+          "block_height": 277257196,
+          "text_sha256": "888c3fa150a7d12c2d2385864fc6c48a6999796e542a4f9b663b22d2f101e73a",
           "decision": "block",
           "fired": [
             {
               "rule": "off_theme",
-              "bp": 9887
+              "bp": 9983
             }
           ],
-          "outlayer_request": "24200",
-          "at": 1794418882
+          "outlayer_request": "24913",
+          "at": 1794424660
         }
       },
       "where": "digital-art-fund.testnet application 1"
     },
     {
-      "id": "ai-policy-gate.testnet#3",
+      "id": "ai-policy-gate.testnet#36",
       "title": "BLOCK · grants/digital-art@2",
-      "subtitle": "request 3 for digital-art-fund.testnet · OutLayer request 24202",
+      "subtitle": "request 36 for digital-art-fund.testnet · OutLayer request 24916",
       "verdict": "pass",
       "steps": [
         {
@@ -247,11 +242,6 @@
           "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
         },
         {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
           "label": "Intel signed this quote",
           "verdict": "pass",
           "detail": "Genuine Intel TDX hardware, TCB up to date"
@@ -268,8 +258,8 @@
         },
         {
           "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
+          "verdict": "skip",
+          "detail": "the text is not known to this check"
         },
         {
           "label": "The run's attested output is this verdict",
@@ -285,11 +275,11 @@
       "facts": [
         {
           "label": "Fired",
-          "value": "instructs_the_reviewer 99.51%"
+          "value": "instructs_the_reviewer 99.49%"
         },
         {
           "label": "Text sha256",
-          "value": "b3a6d365…e8e64e7d",
+          "value": "21809ebd…f57ee08e",
           "mono": true
         },
         {
@@ -300,36 +290,36 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":3,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277247421,\"text_sha256\":\"b3a6d36506d19aef5a17a61ec047f59071b74b0f5bc50679ae3b4e08e8e64e7d\",\"decision\":\"block\",\"fired\":[{\"rule\":\"instructs_the_reviewer\",\"bp\":9951}],\"outlayer_request\":\"24202\",\"at\":1794418898}",
-          "signature": "63ede7c4e237a020a6c2e7008c23fd19a76a961f71282dad2d67313b903d6bfa679d21f1ca2361048b638a67378ca36b20c9a129e032cf52300d88fe0e2f1502"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":36,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257237,\"text_sha256\":\"21809ebdc0cdc231ced7060f5a481402a6269953e1d3ad521ff24c50f57ee08e\",\"decision\":\"block\",\"fired\":[{\"rule\":\"instructs_the_reviewer\",\"bp\":9949}],\"outlayer_request\":\"24916\",\"at\":1794424684}",
+          "signature": "1a642cb8058a14a5832e35bee8e2b9e6dbec18c71e8827203f31462c508a61fddd272903e4332e125205ba453b05f4e44e0d2d7f39c0cf055d3c14ded4b3bf03"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 3,
+          "request": 36,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277247421,
-          "text_sha256": "b3a6d36506d19aef5a17a61ec047f59071b74b0f5bc50679ae3b4e08e8e64e7d",
+          "block_height": 277257237,
+          "text_sha256": "21809ebdc0cdc231ced7060f5a481402a6269953e1d3ad521ff24c50f57ee08e",
           "decision": "block",
           "fired": [
             {
               "rule": "instructs_the_reviewer",
-              "bp": 9951
+              "bp": 9949
             }
           ],
-          "outlayer_request": "24202",
-          "at": 1794418898
+          "outlayer_request": "24916",
+          "at": 1794424684
         }
       },
       "where": "digital-art-fund.testnet application 2"
     },
     {
-      "id": "ai-policy-gate.testnet#4",
+      "id": "ai-policy-gate.testnet#37",
       "title": "ESCALATE · grants/digital-art@2",
-      "subtitle": "request 4 for digital-art-fund.testnet · OutLayer request 24280",
+      "subtitle": "request 37 for digital-art-fund.testnet · OutLayer request 24920",
       "verdict": "pass",
       "steps": [
         {
@@ -386,11 +376,11 @@
       "facts": [
         {
           "label": "Fired",
-          "value": "third_party_payment 99.24%"
+          "value": "third_party_payment 99.15%"
         },
         {
           "label": "Text sha256",
-          "value": "f4fc0588…660c7b53",
+          "value": "04e06610…b94606c9",
           "mono": true
         },
         {
@@ -401,36 +391,36 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":4,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277249018,\"text_sha256\":\"f4fc05880e3c2ef3bc39ad45ef855a26cfd2ab096752f37c95ca1fdb660c7b53\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"third_party_payment\",\"bp\":9924}],\"outlayer_request\":\"24280\",\"at\":1794419843}",
-          "signature": "7a3fb3cebec3e1e656b1a56e90942f3ad11b881be2bf6d203d96ca66d6a1507f1f7da308d5eb69321a7e8787499ae64c8109d20546c448133f4b20789a33c90b"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":37,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257258,\"text_sha256\":\"04e066103991c0f5d07ecb386ce9ad20949436dee49a169612ea4dd0b94606c9\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"third_party_payment\",\"bp\":9915}],\"outlayer_request\":\"24920\",\"at\":1794424697}",
+          "signature": "40eee9755d00e20c5bf63acdbb588f554a681ca66f0577bf5c9d2c0a9af26341b17ea286868798d9330ad34dfcc146d01242bef389a37340d9420697ed8c1e07"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 4,
+          "request": 37,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277249018,
-          "text_sha256": "f4fc05880e3c2ef3bc39ad45ef855a26cfd2ab096752f37c95ca1fdb660c7b53",
+          "block_height": 277257258,
+          "text_sha256": "04e066103991c0f5d07ecb386ce9ad20949436dee49a169612ea4dd0b94606c9",
           "decision": "escalate",
           "fired": [
             {
               "rule": "third_party_payment",
-              "bp": 9924
+              "bp": 9915
             }
           ],
-          "outlayer_request": "24280",
-          "at": 1794419843
+          "outlayer_request": "24920",
+          "at": 1794424697
         }
       },
       "where": "digital-art-fund.testnet application 3"
     },
     {
-      "id": "ai-policy-gate.testnet#5",
+      "id": "ai-policy-gate.testnet#38",
       "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 5 for digital-art-fund.testnet · OutLayer request 24382",
+      "subtitle": "request 38 for digital-art-fund.testnet · OutLayer request 24923",
       "verdict": "pass",
       "steps": [
         {
@@ -491,7 +481,7 @@
         },
         {
           "label": "Text sha256",
-          "value": "647d77bc…a120b6b7",
+          "value": "840e3b7d…1f0c3295",
           "mono": true
         },
         {
@@ -502,31 +492,31 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":5,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277250707,\"text_sha256\":\"647d77bc99967d52f333f5799f4bd940e3313cd38a91d70c96d3a68ca120b6b7\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24382\",\"at\":1794420842}",
-          "signature": "12b6e2b5662e2669ea3db375084c890ed58782d08a88013d95647dc678e049af623243be2f705f769b1404bbe025fb23bb322717645a8eb23836b05a35e8e104"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":38,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257303,\"text_sha256\":\"840e3b7d149368dfe7063a641d03c0e0da4550835e0d064d7704d8491f0c3295\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24923\",\"at\":1794424724}",
+          "signature": "e676447e615ec4c18476f02af728a23de7d6f912bcc33e6878ebb4be5ab4cfe3e7f1ea538f137d0770705234c68bda9ef8288e6314ab17f73cc03460b6279901"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 5,
+          "request": 38,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277250707,
-          "text_sha256": "647d77bc99967d52f333f5799f4bd940e3313cd38a91d70c96d3a68ca120b6b7",
+          "block_height": 277257303,
+          "text_sha256": "840e3b7d149368dfe7063a641d03c0e0da4550835e0d064d7704d8491f0c3295",
           "decision": "pass",
           "fired": [],
-          "outlayer_request": "24382",
-          "at": 1794420842
+          "outlayer_request": "24923",
+          "at": 1794424724
         }
       },
       "where": "digital-art-fund.testnet application 4"
     },
     {
-      "id": "ai-policy-gate.testnet#6",
+      "id": "ai-policy-gate.testnet#39",
       "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 6 for digital-art-fund.testnet · OutLayer request 24393",
+      "subtitle": "request 39 for digital-art-fund.testnet · OutLayer request 24926",
       "verdict": "pass",
       "steps": [
         {
@@ -566,8 +556,8 @@
         },
         {
           "label": "The run's attested input is the gate's request",
-          "verdict": "skip",
-          "detail": "the text is not known to this check"
+          "verdict": "pass",
+          "detail": "sha256 of the gate's request for this text = the attested input hash"
         },
         {
           "label": "The run's attested output is this verdict",
@@ -587,7 +577,7 @@
         },
         {
           "label": "Text sha256",
-          "value": "fbe423d1…75ac5e36",
+          "value": "4a383942…8cfdaca0",
           "mono": true
         },
         {
@@ -598,31 +588,31 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":6,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277250865,\"text_sha256\":\"fbe423d13a5f33c3912329151df148bd114a16d3c75dbe05a7f5afc275ac5e36\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24393\",\"at\":1794420934}",
-          "signature": "3b6f7372bfeabb23eb9bdbeb1ec29058a4f97369c2810a371690a548aded3a54b4ea856b837331c5edcbbbe366a0e91f0aedd1f997f3a83867e9a458db177809"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":39,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277257331,\"text_sha256\":\"4a383942dadfd89592db325812ea813605a60d0fcfcde585733859728cfdaca0\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24926\",\"at\":1794424742}",
+          "signature": "9b2c1e1e5713077b89530827142034663bd1e47bff39b902f3a4c761ed50f08c763458cc20c2841a06e11be801c757db1221c505d1fd9f3d082de57f98c13c02"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 6,
+          "request": 39,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277250865,
-          "text_sha256": "fbe423d13a5f33c3912329151df148bd114a16d3c75dbe05a7f5afc275ac5e36",
+          "block_height": 277257331,
+          "text_sha256": "4a383942dadfd89592db325812ea813605a60d0fcfcde585733859728cfdaca0",
           "decision": "pass",
           "fired": [],
-          "outlayer_request": "24393",
-          "at": 1794420934
+          "outlayer_request": "24926",
+          "at": 1794424742
         }
       },
       "where": "digital-art-fund.testnet application 5"
     },
     {
-      "id": "ai-policy-gate.testnet#13",
-      "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 13 for digital-art-fund.testnet · OutLayer request 24448",
+      "id": "ai-policy-gate.testnet#41",
+      "title": "BLOCK · grants/digital-art@2",
+      "subtitle": "request 41 for digital-art-fund.testnet · OutLayer request 25254",
       "verdict": "pass",
       "steps": [
         {
@@ -679,11 +669,11 @@
       "facts": [
         {
           "label": "Fired",
-          "value": "none"
+          "value": "off_theme 99.86%"
         },
         {
           "label": "Text sha256",
-          "value": "32197500…6fb8acaf",
+          "value": "b009fada…5f24262d",
           "mono": true
         },
         {
@@ -694,132 +684,36 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":13,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251542,\"text_sha256\":\"32197500a6791459de73ebc77501ff6fd78b4ac804cc80c5497af5a36fb8acaf\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24448\",\"at\":1794421355}",
-          "signature": "6311467421d17019f6254e6de737b70adf38d2c87dbcd04fe81eff1acb02f6bbc9d53558a2c7c055fc08ab2b0f895ba6e36e1df2a088c98645ce490167b91901"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":41,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277262551,\"text_sha256\":\"b009fadafd184fb589e79c9789b87914b5eee3ae0cb22b2c2a1badf45f24262d\",\"decision\":\"block\",\"fired\":[{\"rule\":\"off_theme\",\"bp\":9986}],\"outlayer_request\":\"25254\",\"at\":1794427863}",
+          "signature": "8b92748eed9a861828b8f3fe79f98bb05a1b77a8e421a6459fbbef234087d48c3f6d651cdfddb18d0e91bbdfe1070909f40d6635249b05d813b043728539b809"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 13,
+          "request": 41,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277251542,
-          "text_sha256": "32197500a6791459de73ebc77501ff6fd78b4ac804cc80c5497af5a36fb8acaf",
-          "decision": "pass",
-          "fired": [],
-          "outlayer_request": "24448",
-          "at": 1794421355
+          "block_height": 277262551,
+          "text_sha256": "b009fadafd184fb589e79c9789b87914b5eee3ae0cb22b2c2a1badf45f24262d",
+          "decision": "block",
+          "fired": [
+            {
+              "rule": "off_theme",
+              "bp": 9986
+            }
+          ],
+          "outlayer_request": "25254",
+          "at": 1794427863
         }
       },
       "where": "digital-art-fund.testnet application 6"
     },
     {
-      "id": "ai-policy-gate.testnet#14",
+      "id": "ai-policy-gate.testnet#42",
       "title": "BLOCK · grants/digital-art@2",
-      "subtitle": "request 14 for digital-art-fund.testnet · OutLayer request 24453",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "off_theme 98.87%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "88963ee8…903e5b37",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "a160ce8e…4fd73059",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":14,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251578,\"text_sha256\":\"88963ee8376e136e9811cfebda53ae1ad6238c06ee63b14c1cf0e58f903e5b37\",\"decision\":\"block\",\"fired\":[{\"rule\":\"off_theme\",\"bp\":9887}],\"outlayer_request\":\"24453\",\"at\":1794421377}",
-          "signature": "3503b94fb192bce3e6ba49ad299433a2b488beb8df690c45c99ba93e1497cd5a54e8e0488bc891a53c03f8330a895cdb7de14aba3f57baa322c0e697d9ff1c0f"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "digital-art-fund.testnet",
-          "request": 14,
-          "pack": "grants/digital-art@2",
-          "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251578,
-          "text_sha256": "88963ee8376e136e9811cfebda53ae1ad6238c06ee63b14c1cf0e58f903e5b37",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "off_theme",
-              "bp": 9887
-            }
-          ],
-          "outlayer_request": "24453",
-          "at": 1794421377
-        }
-      },
-      "where": "digital-art-fund.testnet application 7"
-    },
-    {
-      "id": "ai-policy-gate.testnet#15",
-      "title": "BLOCK · grants/digital-art@2",
-      "subtitle": "request 15 for digital-art-fund.testnet · OutLayer request 24455",
+      "subtitle": "request 42 for digital-art-fund.testnet · OutLayer request 25256",
       "verdict": "pass",
       "steps": [
         {
@@ -880,7 +774,7 @@
         },
         {
           "label": "Text sha256",
-          "value": "b3a6d365…e8e64e7d",
+          "value": "2a113ebd…591ff087",
           "mono": true
         },
         {
@@ -891,19 +785,19 @@
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":15,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251603,\"text_sha256\":\"b3a6d36506d19aef5a17a61ec047f59071b74b0f5bc50679ae3b4e08e8e64e7d\",\"decision\":\"block\",\"fired\":[{\"rule\":\"instructs_the_reviewer\",\"bp\":9951}],\"outlayer_request\":\"24455\",\"at\":1794421392}",
-          "signature": "828c821c2dd1de8abdc18f44768d053a4d76ee336c83fc4e68ac3dfba13e2222e3a74a3dc0aa6039a866176daa068418146300c183247db25a70dd772cf5280b"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":42,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277262572,\"text_sha256\":\"2a113ebda0dc6593e3581cc0662505208bc12703d758561930e7c5b9591ff087\",\"decision\":\"block\",\"fired\":[{\"rule\":\"instructs_the_reviewer\",\"bp\":9951}],\"outlayer_request\":\"25256\",\"at\":1794427876}",
+          "signature": "ef5f31fbea83fd5bb00733bc74fe9a489f27c6953d120c1d225fe000a4fd4ffbd55279923cdbf0167a3adbb3b1c6d427fb555f837c62384985222cfffec6f80f"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
           "for": "digital-art-fund.testnet",
-          "request": 15,
+          "request": 42,
           "pack": "grants/digital-art@2",
           "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277251603,
-          "text_sha256": "b3a6d36506d19aef5a17a61ec047f59071b74b0f5bc50679ae3b4e08e8e64e7d",
+          "block_height": 277262572,
+          "text_sha256": "2a113ebda0dc6593e3581cc0662505208bc12703d758561930e7c5b9591ff087",
           "decision": "block",
           "fired": [
             {
@@ -911,16 +805,16 @@
               "bp": 9951
             }
           ],
-          "outlayer_request": "24455",
-          "at": 1794421392
+          "outlayer_request": "25256",
+          "at": 1794427876
         }
       },
-      "where": "digital-art-fund.testnet application 8"
+      "where": "digital-art-fund.testnet application 7"
     },
     {
-      "id": "ai-policy-gate.testnet#16",
-      "title": "ESCALATE · grants/digital-art@2",
-      "subtitle": "request 16 for digital-art-fund.testnet · OutLayer request 24457",
+      "id": "ai-policy-gate.testnet#27",
+      "title": "PASS · markets/listing@1",
+      "subtitle": "request 27 for ai-prediction-markets.testnet · OutLayer request 24875",
       "verdict": "pass",
       "steps": [
         {
@@ -936,7 +830,7 @@
         {
           "label": "The rulebook is the one on chain",
           "verdict": "pass",
-          "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
+          "detail": "markets/listing@1, published by ai-prediction-markets.testnet, sha256 570963b1…253d26f0"
         },
         {
           "label": "The text judged is the text sent",
@@ -977,1140 +871,445 @@
       "facts": [
         {
           "label": "Fired",
-          "value": "third_party_payment 99.24%"
+          "value": "none"
         },
         {
           "label": "Text sha256",
-          "value": "f4fc0588…660c7b53",
+          "value": "4e17b626…3bd6bc42",
           "mono": true
         },
         {
           "label": "Rulebook sha256",
-          "value": "a160ce8e…4fd73059",
+          "value": "570963b1…253d26f0",
           "mono": true
         }
       ],
       "raw": {
         "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":16,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251625,\"text_sha256\":\"f4fc05880e3c2ef3bc39ad45ef855a26cfd2ab096752f37c95ca1fdb660c7b53\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"third_party_payment\",\"bp\":9924}],\"outlayer_request\":\"24457\",\"at\":1794421406}",
-          "signature": "dbe55808ae779e9755c3a835a606b0386fa8421fb54339d6013224324657ee5f554575184bec9f21573323008cb5f1d27c1b9530282348cdff5d3527f0f84d08"
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"ai-prediction-markets.testnet\",\"request\":27,\"pack\":\"markets/listing@1\",\"pack_sha256\":\"570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277256833,\"text_sha256\":\"4e17b62667ac84264e8bf6e2607c0d9ce6f232b883a3166bfb6c4ecf3bd6bc42\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24875\",\"at\":1794424449}",
+          "signature": "b3c204a5d5f9040effa7c7a859120ee22613aa833bee3ae385bd054b5198d08d52a5b526899a2f33a87a0403d58b66e1d3d04b4c468a978139a0e02f9d208b03"
         },
         "verdict": {
           "format": "policy-judge/verdict/1",
           "gate": "ai-policy-gate.testnet",
-          "for": "digital-art-fund.testnet",
-          "request": 16,
-          "pack": "grants/digital-art@2",
-          "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
+          "for": "ai-prediction-markets.testnet",
+          "request": 27,
+          "pack": "markets/listing@1",
+          "pack_sha256": "570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0",
           "registry": "policies.zavodil.testnet",
-          "block_height": 277251625,
-          "text_sha256": "f4fc05880e3c2ef3bc39ad45ef855a26cfd2ab096752f37c95ca1fdb660c7b53",
+          "block_height": 277256833,
+          "text_sha256": "4e17b62667ac84264e8bf6e2607c0d9ce6f232b883a3166bfb6c4ecf3bd6bc42",
+          "decision": "pass",
+          "fired": [],
+          "outlayer_request": "24875",
+          "at": 1794424449
+        }
+      },
+      "where": "ai-prediction-markets.testnet market 0"
+    },
+    {
+      "id": "ai-policy-gate.testnet#28",
+      "title": "BLOCK · markets/listing@1",
+      "subtitle": "request 28 for ai-prediction-markets.testnet · OutLayer request 24879",
+      "verdict": "pass",
+      "steps": [
+        {
+          "label": "Signed by the pinned judge build",
+          "verdict": "pass",
+          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
+        },
+        {
+          "label": "The gate accepts it on chain",
+          "verdict": "pass",
+          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
+        },
+        {
+          "label": "The rulebook is the one on chain",
+          "verdict": "pass",
+          "detail": "markets/listing@1, published by ai-prediction-markets.testnet, sha256 570963b1…253d26f0"
+        },
+        {
+          "label": "The text judged is the text sent",
+          "verdict": "pass",
+          "detail": "sha256(text) = the verdict's text_sha256"
+        },
+        {
+          "label": "Intel signed this quote",
+          "verdict": "pass",
+          "detail": "Genuine Intel TDX hardware, TCB up to date"
+        },
+        {
+          "label": "The quote commits to this run",
+          "verdict": "pass",
+          "detail": "report_data = hash(code, input, output, caller, project, time)"
+        },
+        {
+          "label": "An approved OutLayer worker ran it",
+          "verdict": "pass",
+          "detail": "Measurements listed on worker.outlayer.testnet"
+        },
+        {
+          "label": "The run's attested input is the gate's request",
+          "verdict": "pass",
+          "detail": "sha256 of the gate's request for this text = the attested input hash"
+        },
+        {
+          "label": "The run's attested output is this verdict",
+          "verdict": "pass",
+          "detail": "sha256({message, signature}) = the attested output hash"
+        },
+        {
+          "label": "The run was the pinned build",
+          "verdict": "pass",
+          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Fired",
+          "value": "harm_to_a_person 96.94%"
+        },
+        {
+          "label": "Text sha256",
+          "value": "9d5cd0aa…9f816b46",
+          "mono": true
+        },
+        {
+          "label": "Rulebook sha256",
+          "value": "570963b1…253d26f0",
+          "mono": true
+        }
+      ],
+      "raw": {
+        "signed": {
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"ai-prediction-markets.testnet\",\"request\":28,\"pack\":\"markets/listing@1\",\"pack_sha256\":\"570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277256871,\"text_sha256\":\"9d5cd0aaaae1cd4bcfe44d1dd354b473174fbb74e874ddf7d72e8e329f816b46\",\"decision\":\"block\",\"fired\":[{\"rule\":\"harm_to_a_person\",\"bp\":9694}],\"outlayer_request\":\"24879\",\"at\":1794424469}",
+          "signature": "f09df443dcf4323fc7689e4d6f95d72bdf9fd44a81d307e9033e96610bfd47d12986b52ccf69d68c176fea7c4fc7116d7ba0ae08345b0b5d412288c29e3c5104"
+        },
+        "verdict": {
+          "format": "policy-judge/verdict/1",
+          "gate": "ai-policy-gate.testnet",
+          "for": "ai-prediction-markets.testnet",
+          "request": 28,
+          "pack": "markets/listing@1",
+          "pack_sha256": "570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0",
+          "registry": "policies.zavodil.testnet",
+          "block_height": 277256871,
+          "text_sha256": "9d5cd0aaaae1cd4bcfe44d1dd354b473174fbb74e874ddf7d72e8e329f816b46",
+          "decision": "block",
+          "fired": [
+            {
+              "rule": "harm_to_a_person",
+              "bp": 9694
+            }
+          ],
+          "outlayer_request": "24879",
+          "at": 1794424469
+        }
+      },
+      "where": "ai-prediction-markets.testnet market 1"
+    },
+    {
+      "id": "ai-policy-gate.testnet#29",
+      "title": "BLOCK · markets/listing@1",
+      "subtitle": "request 29 for ai-prediction-markets.testnet · OutLayer request 24882",
+      "verdict": "pass",
+      "steps": [
+        {
+          "label": "Signed by the pinned judge build",
+          "verdict": "pass",
+          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
+        },
+        {
+          "label": "The gate accepts it on chain",
+          "verdict": "pass",
+          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
+        },
+        {
+          "label": "The rulebook is the one on chain",
+          "verdict": "pass",
+          "detail": "markets/listing@1, published by ai-prediction-markets.testnet, sha256 570963b1…253d26f0"
+        },
+        {
+          "label": "The text judged is the text sent",
+          "verdict": "pass",
+          "detail": "sha256(text) = the verdict's text_sha256"
+        },
+        {
+          "label": "Intel signed this quote",
+          "verdict": "pass",
+          "detail": "Genuine Intel TDX hardware, TCB up to date"
+        },
+        {
+          "label": "The quote commits to this run",
+          "verdict": "pass",
+          "detail": "report_data = hash(code, input, output, caller, project, time)"
+        },
+        {
+          "label": "An approved OutLayer worker ran it",
+          "verdict": "pass",
+          "detail": "Measurements listed on worker.outlayer.testnet"
+        },
+        {
+          "label": "The run's attested input is the gate's request",
+          "verdict": "pass",
+          "detail": "sha256 of the gate's request for this text = the attested input hash"
+        },
+        {
+          "label": "The run's attested output is this verdict",
+          "verdict": "pass",
+          "detail": "sha256({message, signature}) = the attested output hash"
+        },
+        {
+          "label": "The run was the pinned build",
+          "verdict": "pass",
+          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Fired",
+          "value": "harm_to_a_person 95.49%"
+        },
+        {
+          "label": "Text sha256",
+          "value": "97118866…951bb34e",
+          "mono": true
+        },
+        {
+          "label": "Rulebook sha256",
+          "value": "570963b1…253d26f0",
+          "mono": true
+        }
+      ],
+      "raw": {
+        "signed": {
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"ai-prediction-markets.testnet\",\"request\":29,\"pack\":\"markets/listing@1\",\"pack_sha256\":\"570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277256895,\"text_sha256\":\"9711886697532d30da80048e9f8fd8165f624ca9a4dfb465ced954ee951bb34e\",\"decision\":\"block\",\"fired\":[{\"rule\":\"harm_to_a_person\",\"bp\":9549}],\"outlayer_request\":\"24882\",\"at\":1794424481}",
+          "signature": "de57d28bfb505b470d8c387bbc4f236e25ee1851c2d635a4e78399fd7dca6319d647b260ad3b513b94f195cbd3df37caaef64a97456dd38a495a1637f1084c0d"
+        },
+        "verdict": {
+          "format": "policy-judge/verdict/1",
+          "gate": "ai-policy-gate.testnet",
+          "for": "ai-prediction-markets.testnet",
+          "request": 29,
+          "pack": "markets/listing@1",
+          "pack_sha256": "570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0",
+          "registry": "policies.zavodil.testnet",
+          "block_height": 277256895,
+          "text_sha256": "9711886697532d30da80048e9f8fd8165f624ca9a4dfb465ced954ee951bb34e",
+          "decision": "block",
+          "fired": [
+            {
+              "rule": "harm_to_a_person",
+              "bp": 9549
+            }
+          ],
+          "outlayer_request": "24882",
+          "at": 1794424481
+        }
+      },
+      "where": "ai-prediction-markets.testnet market 2"
+    },
+    {
+      "id": "ai-policy-gate.testnet#30",
+      "title": "BLOCK · markets/listing@1",
+      "subtitle": "request 30 for ai-prediction-markets.testnet · OutLayer request 24884",
+      "verdict": "pass",
+      "steps": [
+        {
+          "label": "Signed by the pinned judge build",
+          "verdict": "pass",
+          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
+        },
+        {
+          "label": "The gate accepts it on chain",
+          "verdict": "pass",
+          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
+        },
+        {
+          "label": "The rulebook is the one on chain",
+          "verdict": "pass",
+          "detail": "markets/listing@1, published by ai-prediction-markets.testnet, sha256 570963b1…253d26f0"
+        },
+        {
+          "label": "The text judged is the text sent",
+          "verdict": "pass",
+          "detail": "sha256(text) = the verdict's text_sha256"
+        },
+        {
+          "label": "Intel signed this quote",
+          "verdict": "pass",
+          "detail": "Genuine Intel TDX hardware, TCB up to date"
+        },
+        {
+          "label": "The quote commits to this run",
+          "verdict": "pass",
+          "detail": "report_data = hash(code, input, output, caller, project, time)"
+        },
+        {
+          "label": "An approved OutLayer worker ran it",
+          "verdict": "pass",
+          "detail": "Measurements listed on worker.outlayer.testnet"
+        },
+        {
+          "label": "The run's attested input is the gate's request",
+          "verdict": "pass",
+          "detail": "sha256 of the gate's request for this text = the attested input hash"
+        },
+        {
+          "label": "The run's attested output is this verdict",
+          "verdict": "pass",
+          "detail": "sha256({message, signature}) = the attested output hash"
+        },
+        {
+          "label": "The run was the pinned build",
+          "verdict": "pass",
+          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Fired",
+          "value": "creator_controls_outcome 99.80%"
+        },
+        {
+          "label": "Text sha256",
+          "value": "a993cc56…7bd2a0ed",
+          "mono": true
+        },
+        {
+          "label": "Rulebook sha256",
+          "value": "570963b1…253d26f0",
+          "mono": true
+        }
+      ],
+      "raw": {
+        "signed": {
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"ai-prediction-markets.testnet\",\"request\":30,\"pack\":\"markets/listing@1\",\"pack_sha256\":\"570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277256924,\"text_sha256\":\"a993cc560cb82cb1a6ea01c863f69a79009ceb274ef589ce8b67f98e7bd2a0ed\",\"decision\":\"block\",\"fired\":[{\"rule\":\"creator_controls_outcome\",\"bp\":9980}],\"outlayer_request\":\"24884\",\"at\":1794424498}",
+          "signature": "d39288da7295482d17388b61172ff7a52efdf4df3c6c1d2ad0609d89e8419a2acfefcbe9173cfc23fed7ad6d9dc31da45b698da8d2348db8247e44a04f6b1b0a"
+        },
+        "verdict": {
+          "format": "policy-judge/verdict/1",
+          "gate": "ai-policy-gate.testnet",
+          "for": "ai-prediction-markets.testnet",
+          "request": 30,
+          "pack": "markets/listing@1",
+          "pack_sha256": "570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0",
+          "registry": "policies.zavodil.testnet",
+          "block_height": 277256924,
+          "text_sha256": "a993cc560cb82cb1a6ea01c863f69a79009ceb274ef589ce8b67f98e7bd2a0ed",
+          "decision": "block",
+          "fired": [
+            {
+              "rule": "creator_controls_outcome",
+              "bp": 9980
+            }
+          ],
+          "outlayer_request": "24884",
+          "at": 1794424498
+        }
+      },
+      "where": "ai-prediction-markets.testnet market 3"
+    },
+    {
+      "id": "ai-policy-gate.testnet#31",
+      "title": "ESCALATE · markets/listing@1",
+      "subtitle": "request 31 for ai-prediction-markets.testnet · OutLayer request 24887",
+      "verdict": "pass",
+      "steps": [
+        {
+          "label": "Signed by the pinned judge build",
+          "verdict": "pass",
+          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
+        },
+        {
+          "label": "The gate accepts it on chain",
+          "verdict": "pass",
+          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
+        },
+        {
+          "label": "The rulebook is the one on chain",
+          "verdict": "pass",
+          "detail": "markets/listing@1, published by ai-prediction-markets.testnet, sha256 570963b1…253d26f0"
+        },
+        {
+          "label": "The text judged is the text sent",
+          "verdict": "pass",
+          "detail": "sha256(text) = the verdict's text_sha256"
+        },
+        {
+          "label": "Intel signed this quote",
+          "verdict": "pass",
+          "detail": "Genuine Intel TDX hardware, TCB up to date"
+        },
+        {
+          "label": "The quote commits to this run",
+          "verdict": "pass",
+          "detail": "report_data = hash(code, input, output, caller, project, time)"
+        },
+        {
+          "label": "An approved OutLayer worker ran it",
+          "verdict": "pass",
+          "detail": "Measurements listed on worker.outlayer.testnet"
+        },
+        {
+          "label": "The run's attested input is the gate's request",
+          "verdict": "pass",
+          "detail": "sha256 of the gate's request for this text = the attested input hash"
+        },
+        {
+          "label": "The run's attested output is this verdict",
+          "verdict": "pass",
+          "detail": "sha256({message, signature}) = the attested output hash"
+        },
+        {
+          "label": "The run was the pinned build",
+          "verdict": "pass",
+          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
+        }
+      ],
+      "facts": [
+        {
+          "label": "Fired",
+          "value": "election 99.79%"
+        },
+        {
+          "label": "Text sha256",
+          "value": "adc1657f…85783b3b",
+          "mono": true
+        },
+        {
+          "label": "Rulebook sha256",
+          "value": "570963b1…253d26f0",
+          "mono": true
+        }
+      ],
+      "raw": {
+        "signed": {
+          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"ai-prediction-markets.testnet\",\"request\":31,\"pack\":\"markets/listing@1\",\"pack_sha256\":\"570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277256946,\"text_sha256\":\"adc1657f1b8ea6e29faaee2bb9e00af2ae7645c5f36df0f53967ffb885783b3b\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"election\",\"bp\":9979}],\"outlayer_request\":\"24887\",\"at\":1794424511}",
+          "signature": "5024e19358a4f896641ff282022c7e97c8e0def67fc9208a27abe0a9acb9c0bfe086b053c7b2d8d3577b50a428a06ce63366e107bbd8de1c1e48bfd1b96ec80f"
+        },
+        "verdict": {
+          "format": "policy-judge/verdict/1",
+          "gate": "ai-policy-gate.testnet",
+          "for": "ai-prediction-markets.testnet",
+          "request": 31,
+          "pack": "markets/listing@1",
+          "pack_sha256": "570963b134b7dfa2b1486a424f444acd6dfa073df1d94e0c5e7bdc5c253d26f0",
+          "registry": "policies.zavodil.testnet",
+          "block_height": 277256946,
+          "text_sha256": "adc1657f1b8ea6e29faaee2bb9e00af2ae7645c5f36df0f53967ffb885783b3b",
           "decision": "escalate",
           "fired": [
             {
-              "rule": "third_party_payment",
-              "bp": 9924
+              "rule": "election",
+              "bp": 9979
             }
           ],
-          "outlayer_request": "24457",
-          "at": 1794421406
+          "outlayer_request": "24887",
+          "at": 1794424511
         }
       },
-      "where": "digital-art-fund.testnet application 9"
-    },
-    {
-      "id": "ai-policy-gate.testnet#17",
-      "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 17 for digital-art-fund.testnet · OutLayer request 24464",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "none"
-        },
-        {
-          "label": "Text sha256",
-          "value": "647d77bc…a120b6b7",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "a160ce8e…4fd73059",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":17,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251730,\"text_sha256\":\"647d77bc99967d52f333f5799f4bd940e3313cd38a91d70c96d3a68ca120b6b7\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24464\",\"at\":1794421468}",
-          "signature": "b7af65cca951964d0890d4bad22b74483cf66c441a7985ed284b422cb7a75ee3c7a4fcb7e22d5014159315592ce316ca1f6e5c63e251632352c79448c8f3ce06"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "digital-art-fund.testnet",
-          "request": 17,
-          "pack": "grants/digital-art@2",
-          "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251730,
-          "text_sha256": "647d77bc99967d52f333f5799f4bd940e3313cd38a91d70c96d3a68ca120b6b7",
-          "decision": "pass",
-          "fired": [],
-          "outlayer_request": "24464",
-          "at": 1794421468
-        }
-      },
-      "where": "digital-art-fund.testnet application 10"
-    },
-    {
-      "id": "ai-policy-gate.testnet#18",
-      "title": "PASS · grants/digital-art@2",
-      "subtitle": "request 18 for digital-art-fund.testnet · OutLayer request 24476",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "grants/digital-art@2, published by digital-art-fund.testnet, sha256 a160ce8e…4fd73059"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "none"
-        },
-        {
-          "label": "Text sha256",
-          "value": "fbe423d1…75ac5e36",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "a160ce8e…4fd73059",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"digital-art-fund.testnet\",\"request\":18,\"pack\":\"grants/digital-art@2\",\"pack_sha256\":\"a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251891,\"text_sha256\":\"fbe423d13a5f33c3912329151df148bd114a16d3c75dbe05a7f5afc275ac5e36\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24476\",\"at\":1794421562}",
-          "signature": "ae0c98ae23c3ce57aebf6c4dd484e5d204ded0152f64c239ea20623a77e2e256d07130223f56d952c4282352737e5a98beaa86c668f8a7c944e4502d33eb750e"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "digital-art-fund.testnet",
-          "request": 18,
-          "pack": "grants/digital-art@2",
-          "pack_sha256": "a160ce8eeae3367e08fe54114f25bb431fe5e7f737dd0e903961d4764fd73059",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251891,
-          "text_sha256": "fbe423d13a5f33c3912329151df148bd114a16d3c75dbe05a7f5afc275ac5e36",
-          "decision": "pass",
-          "fired": [],
-          "outlayer_request": "24476",
-          "at": 1794421562
-        }
-      },
-      "where": "digital-art-fund.testnet application 11"
-    },
-    {
-      "id": "ai-policy-gate.testnet#7",
-      "title": "PASS · memecoins/launch@2",
-      "subtitle": "request 7 for meme-launchpad-ai.testnet · OutLayer request 24402",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "skip",
-          "detail": "the text is not known to this check"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "none"
-        },
-        {
-          "label": "Text sha256",
-          "value": "1c6d3abe…e8970dd5",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":7,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277250979,\"text_sha256\":\"1c6d3abee7c8f96383b2608db28f48c4ec9eba6c95c03bf8d235ba7ae8970dd5\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24402\",\"at\":1794421001}",
-          "signature": "cc8054d3055aba9bcb1fbb6e6452cd1fedb23fefdea0897a4d7f3e34cf6bbe9386df1d7ba6d0bf188030cc17d98da8e882e80027926f65daa65d4bcbbf60b80f"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 7,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277250979,
-          "text_sha256": "1c6d3abee7c8f96383b2608db28f48c4ec9eba6c95c03bf8d235ba7ae8970dd5",
-          "decision": "pass",
-          "fired": [],
-          "outlayer_request": "24402",
-          "at": 1794421001
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 0"
-    },
-    {
-      "id": "ai-policy-gate.testnet#8",
-      "title": "BLOCK · memecoins/launch@2",
-      "subtitle": "request 8 for meme-launchpad-ai.testnet · OutLayer request 24409",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "slur_or_hate 99.05%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "d0d0fa85…6549d1e1",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":8,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251031,\"text_sha256\":\"d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1\",\"decision\":\"block\",\"fired\":[{\"rule\":\"slur_or_hate\",\"bp\":9905}],\"outlayer_request\":\"24409\",\"at\":1794421031}",
-          "signature": "9fb04b31d3212f6c670966cb450d882d0583d04ab2782eb481e403aae9de9a9e71147e5f1857e289a870000af648e3fee05353fe1e5371fb079496add991590e"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 8,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251031,
-          "text_sha256": "d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "slur_or_hate",
-              "bp": 9905
-            }
-          ],
-          "outlayer_request": "24409",
-          "at": 1794421031
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 1"
-    },
-    {
-      "id": "ai-policy-gate.testnet#9",
-      "title": "BLOCK · memecoins/launch@2",
-      "subtitle": "request 9 for meme-launchpad-ai.testnet · OutLayer request 24412",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "slur_or_hate 92.55%, instructs_the_reviewer 99.93%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "40ef5cd7…5214aa52",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":9,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251056,\"text_sha256\":\"40ef5cd7ca7ab61ba137e98a98f2096285e3f3af7711ff31819421945214aa52\",\"decision\":\"block\",\"fired\":[{\"rule\":\"slur_or_hate\",\"bp\":9255},{\"rule\":\"instructs_the_reviewer\",\"bp\":9993}],\"outlayer_request\":\"24412\",\"at\":1794421047}",
-          "signature": "bfd1fc9924d3151a686a30af6e35c0f005cc5db2b161a764cedbbed79c36375b00b2ab2febc162e1987bc4c9f5fe10771c340dbd1419e020e3c5f4a7589b8002"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 9,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251056,
-          "text_sha256": "40ef5cd7ca7ab61ba137e98a98f2096285e3f3af7711ff31819421945214aa52",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "slur_or_hate",
-              "bp": 9255
-            },
-            {
-              "rule": "instructs_the_reviewer",
-              "bp": 9993
-            }
-          ],
-          "outlayer_request": "24412",
-          "at": 1794421047
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 2"
-    },
-    {
-      "id": "ai-policy-gate.testnet#10",
-      "title": "ESCALATE · memecoins/launch@2",
-      "subtitle": "request 10 for meme-launchpad-ai.testnet · OutLayer request 24414",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "real_person_or_brand 99.78%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "b1daf9b5…d340fbc2",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":10,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277251086,\"text_sha256\":\"b1daf9b56414599120b060b38c23c88f2c825af497438ff02d2ba65cd340fbc2\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"real_person_or_brand\",\"bp\":9978}],\"outlayer_request\":\"24414\",\"at\":1794421064}",
-          "signature": "70d122db888f298c7cef0244efb3d1ce1fdc83810abbe5b69ba9785d837a82c6fe6d1409a7a2fb16eeeede6db7e5981b07ed1b3fbd537171afae6e89be63080b"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 10,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277251086,
-          "text_sha256": "b1daf9b56414599120b060b38c23c88f2c825af497438ff02d2ba65cd340fbc2",
-          "decision": "escalate",
-          "fired": [
-            {
-              "rule": "real_person_or_brand",
-              "bp": 9978
-            }
-          ],
-          "outlayer_request": "24414",
-          "at": 1794421064
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 3"
-    },
-    {
-      "id": "ai-policy-gate.testnet#19",
-      "title": "BLOCK · memecoins/launch@2",
-      "subtitle": "request 19 for meme-launchpad-ai.testnet · OutLayer request 24488",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "slur_or_hate 99.05%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "d0d0fa85…6549d1e1",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":19,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277252067,\"text_sha256\":\"d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1\",\"decision\":\"block\",\"fired\":[{\"rule\":\"slur_or_hate\",\"bp\":9905}],\"outlayer_request\":\"24488\",\"at\":1794421667}",
-          "signature": "83482fe65c3c048b718656868a655299911aff60df7a94b32a2384be5bf19a64ebc4162562113cbdf61b1c2c489ee92f4428b7a428408488acf989bacb6bc70d"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 19,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277252067,
-          "text_sha256": "d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "slur_or_hate",
-              "bp": 9905
-            }
-          ],
-          "outlayer_request": "24488",
-          "at": 1794421667
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 4"
-    },
-    {
-      "id": "ai-policy-gate.testnet#22",
-      "title": "PASS · memecoins/launch@2",
-      "subtitle": "request 22 for meme-launchpad-ai.testnet · OutLayer request 24539",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "none"
-        },
-        {
-          "label": "Text sha256",
-          "value": "6bf9190c…e16592ae",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":22,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277252706,\"text_sha256\":\"6bf9190c223a88c45bb744bcdb87ead8e5c4c25fac2a3d69c619d9c7e16592ae\",\"decision\":\"pass\",\"fired\":[],\"outlayer_request\":\"24539\",\"at\":1794422051}",
-          "signature": "60f8cba3aa54fe1617b437f756ee04c6dd212cf529bcda4e32da8c72a4d3b35d0a67b8c8156e8404e2729e0597fed9de7569b3e6ebb812939459e8d6416a4707"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 22,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277252706,
-          "text_sha256": "6bf9190c223a88c45bb744bcdb87ead8e5c4c25fac2a3d69c619d9c7e16592ae",
-          "decision": "pass",
-          "fired": [],
-          "outlayer_request": "24539",
-          "at": 1794422051
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 5"
-    },
-    {
-      "id": "ai-policy-gate.testnet#23",
-      "title": "BLOCK · memecoins/launch@2",
-      "subtitle": "request 23 for meme-launchpad-ai.testnet · OutLayer request 24549",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "slur_or_hate 99.05%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "d0d0fa85…6549d1e1",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":23,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277252869,\"text_sha256\":\"d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1\",\"decision\":\"block\",\"fired\":[{\"rule\":\"slur_or_hate\",\"bp\":9905}],\"outlayer_request\":\"24549\",\"at\":1794422149}",
-          "signature": "d711d9dacfb02cc01a078e068df8f6852569eb672e178010dc7d0b54bfb68701f7245ed52807a617d5be59bff29ee7ce92e91215c9940c31b5106b436d66750f"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 23,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277252869,
-          "text_sha256": "d0d0fa85c97cc5ed679910b5029753bf57b028f1588e45e890475fef6549d1e1",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "slur_or_hate",
-              "bp": 9905
-            }
-          ],
-          "outlayer_request": "24549",
-          "at": 1794422149
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 6"
-    },
-    {
-      "id": "ai-policy-gate.testnet#24",
-      "title": "BLOCK · memecoins/launch@2",
-      "subtitle": "request 24 for meme-launchpad-ai.testnet · OutLayer request 24558",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "slur_or_hate 92.55%, instructs_the_reviewer 99.93%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "40ef5cd7…5214aa52",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":24,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277252955,\"text_sha256\":\"40ef5cd7ca7ab61ba137e98a98f2096285e3f3af7711ff31819421945214aa52\",\"decision\":\"block\",\"fired\":[{\"rule\":\"slur_or_hate\",\"bp\":9255},{\"rule\":\"instructs_the_reviewer\",\"bp\":9993}],\"outlayer_request\":\"24558\",\"at\":1794422201}",
-          "signature": "649ded7dc8b9de748d1a4b6a5659a2f9955d161a313843b943c818c74b0efd4b06f806c68edec4f6bacd8b402ce2df8fa9a09f4070c037f484a44d921606810a"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 24,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277252955,
-          "text_sha256": "40ef5cd7ca7ab61ba137e98a98f2096285e3f3af7711ff31819421945214aa52",
-          "decision": "block",
-          "fired": [
-            {
-              "rule": "slur_or_hate",
-              "bp": 9255
-            },
-            {
-              "rule": "instructs_the_reviewer",
-              "bp": 9993
-            }
-          ],
-          "outlayer_request": "24558",
-          "at": 1794422201
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 7"
-    },
-    {
-      "id": "ai-policy-gate.testnet#25",
-      "title": "ESCALATE · memecoins/launch@2",
-      "subtitle": "request 25 for meme-launchpad-ai.testnet · OutLayer request 24563",
-      "verdict": "pass",
-      "steps": [
-        {
-          "label": "Signed by the pinned judge build",
-          "verdict": "pass",
-          "detail": "ed25519 over the verdict's exact bytes, key 1cf153b6…00ff0302, which only build e2b5fb1d…3e5a4e01 derives"
-        },
-        {
-          "label": "The gate accepts it on chain",
-          "verdict": "pass",
-          "detail": "ai-policy-gate.testnet.verify(message, signature) returns the verdict"
-        },
-        {
-          "label": "The rulebook is the one on chain",
-          "verdict": "pass",
-          "detail": "memecoins/launch@2, published by meme-launchpad-ai.testnet, sha256 6b9eef3b…51e02ad7"
-        },
-        {
-          "label": "The text judged is the text sent",
-          "verdict": "pass",
-          "detail": "sha256(text) = the verdict's text_sha256"
-        },
-        {
-          "label": "Intel signed this quote",
-          "verdict": "pass",
-          "detail": "Genuine Intel TDX hardware, TCB up to date"
-        },
-        {
-          "label": "The quote commits to this run",
-          "verdict": "pass",
-          "detail": "report_data = hash(code, input, output, caller, project, time)"
-        },
-        {
-          "label": "An approved OutLayer worker ran it",
-          "verdict": "pass",
-          "detail": "Measurements listed on worker.outlayer.testnet"
-        },
-        {
-          "label": "The run's attested input is the gate's request",
-          "verdict": "pass",
-          "detail": "sha256 of the gate's request for this text = the attested input hash"
-        },
-        {
-          "label": "The run's attested output is this verdict",
-          "verdict": "pass",
-          "detail": "sha256({message, signature}) = the attested output hash"
-        },
-        {
-          "label": "The run was the pinned build",
-          "verdict": "pass",
-          "detail": "wasm sha256 e2b5fb1d…3e5a4e01, the one the gate is fixed to"
-        }
-      ],
-      "facts": [
-        {
-          "label": "Fired",
-          "value": "real_person_or_brand 99.78%"
-        },
-        {
-          "label": "Text sha256",
-          "value": "b1daf9b5…d340fbc2",
-          "mono": true
-        },
-        {
-          "label": "Rulebook sha256",
-          "value": "6b9eef3b…51e02ad7",
-          "mono": true
-        }
-      ],
-      "raw": {
-        "signed": {
-          "message": "{\"format\":\"policy-judge/verdict/1\",\"gate\":\"ai-policy-gate.testnet\",\"for\":\"meme-launchpad-ai.testnet\",\"request\":25,\"pack\":\"memecoins/launch@2\",\"pack_sha256\":\"6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7\",\"registry\":\"policies.zavodil.testnet\",\"block_height\":277252988,\"text_sha256\":\"b1daf9b56414599120b060b38c23c88f2c825af497438ff02d2ba65cd340fbc2\",\"decision\":\"escalate\",\"fired\":[{\"rule\":\"real_person_or_brand\",\"bp\":9978}],\"outlayer_request\":\"24563\",\"at\":1794422221}",
-          "signature": "8873dbd940bffe5b8427708e53188955671693d3d079ba566459ee6b38ecb888d200ecdb8dffebd0e4f38fe16392b9a0c0c9901cc9be79a96d086d2346070d01"
-        },
-        "verdict": {
-          "format": "policy-judge/verdict/1",
-          "gate": "ai-policy-gate.testnet",
-          "for": "meme-launchpad-ai.testnet",
-          "request": 25,
-          "pack": "memecoins/launch@2",
-          "pack_sha256": "6b9eef3b430e9acd9e52c9b9ee011a7e343f3dc7ca8eea345170343c51e02ad7",
-          "registry": "policies.zavodil.testnet",
-          "block_height": 277252988,
-          "text_sha256": "b1daf9b56414599120b060b38c23c88f2c825af497438ff02d2ba65cd340fbc2",
-          "decision": "escalate",
-          "fired": [
-            {
-              "rule": "real_person_or_brand",
-              "bp": 9978
-            }
-          ],
-          "outlayer_request": "24563",
-          "at": 1794422221
-        }
-      },
-      "where": "meme-launchpad-ai.testnet launch 8"
+      "where": "ai-prediction-markets.testnet market 4"
     }
   ]
 }
