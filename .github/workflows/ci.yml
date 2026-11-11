@@ -1,0 +1,31 @@
+# The judge's and the contracts' tests, and their builds, on every push.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: contracts
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup show
+      - run: cargo test --workspace
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+
+  judge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The judge takes OutLayer's SDK as a path dependency until 0.2.2 is on crates.io.
+      - run: git clone --depth 1 https://github.com/out-layer/outlayer ../near-offshore
+      - run: rustup show
+        working-directory: module
+      - run: cargo test
+        working-directory: module
+      - run: cargo clippy --all-targets -- -D warnings
+        working-directory: module

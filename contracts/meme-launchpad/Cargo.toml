@@ -1,0 +1,16 @@
+[package]
+name = "meme-launchpad"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = { workspace = true }
+schemars = { workspace = true }
+policy-gate-interface = { path = "../interface" }
+
+[dev-dependencies]
+near-sdk = { workspace = true, features = ["unit-testing"] }

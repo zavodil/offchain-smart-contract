@@ -1,0 +1,34 @@
+[package]
+name = "policy-judge"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "The off-chain half of an off-chain smart contract: a fixed rulebook from NEAR, judged by Sage in an Intel TDX enclave, answered as a verdict signed by this exact build"
+
+[[bin]]
+name = "policy-judge"
+path = "src/main.rs"
+
+[dependencies]
+# The `inbox` encryption key and the `verdict` signing key, both bound to this
+# exact build (`bind: "wasm"`). The path is OutLayer's SDK tree until 0.2.2 is
+# on crates.io.
+outlayer = { version = "0.2.2", path = "../../near-offshore/sdk/outlayer", features = ["encryption-keys", "signing-keys"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# The only way out of the enclave (`wasi:http`); the manifest's allowlist
+# decides where to.
+wasi = "0.13"
+base64 = "0.22"
+hex = "0.4"
+sha2 = "0.10"
+# Private text arrives sealed to the build's enclave key: `ecies` here,
+# `eciesjs` in a client.
+ecies = { version = "0.2", default-features = false, features = ["pure", "std"] }
+libsecp256k1 = "0.7"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+codegen-units = 1

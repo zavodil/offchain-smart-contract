@@ -1,0 +1,43 @@
+{
+  "id": "memecoins/launch",
+  "version": 1,
+  "title": "Memecoin launchpad — listing rules",
+  "model": "levanto/sage-2",
+  "rules": [
+    {
+      "id": "slur_or_hate",
+      "cite": "Listing rules §1: no hate",
+      "question": "Does the token's name, ticker or description contain a slur, or insult or demean a group of people by race, ethnicity, nationality, religion, gender, sexuality or disability?",
+      "threshold": 50,
+      "action": "block"
+    },
+    {
+      "id": "targets_private_person",
+      "cite": "Listing rules §2: no harassment",
+      "question": "Does the token mock, insult, threaten or expose a specific private individual?",
+      "threshold": 50,
+      "action": "block"
+    },
+    {
+      "id": "promises_returns",
+      "cite": "Listing rules §3: no investment promises",
+      "question": "Does the token's description promise guaranteed returns or profits, or claim that its price will rise?",
+      "threshold": 60,
+      "action": "block"
+    },
+    {
+      "id": "sexual_or_violent",
+      "cite": "Listing rules §4: no sexual or violent content",
+      "question": "Does the token's name, ticker or description contain sexual content or glorify violence?",
+      "threshold": 60,
+      "action": "block"
+    },
+    {
+      "id": "real_person_or_brand",
+      "cite": "Listing rules §5: real names need a moderator",
+      "question": "Does the token use the name or likeness of a real public figure, or of a real company or brand?",
+      "threshold": 60,
+      "action": "escalate"
+    }
+  ]
+}

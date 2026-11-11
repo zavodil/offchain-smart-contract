@@ -1,0 +1,32 @@
+{
+  "display": {
+    "name": "Off-chain smart contract — policy judge"
+  },
+  "operations": [
+    "keys",
+    "screen"
+  ],
+  "capabilities": {
+    "network": [
+      {
+        "host": "cloud-api.near.ai",
+        "timeout_secs": 120
+      }
+    ]
+  },
+  "encryption_keys": [
+    {
+      "path": "inbox",
+      "bind": "wasm",
+      "caller": "predecessor"
+    }
+  ],
+  "signing_keys": [
+    {
+      "path": "verdict",
+      "type": "ed25519",
+      "bind": "wasm",
+      "caller": "none"
+    }
+  ]
+}

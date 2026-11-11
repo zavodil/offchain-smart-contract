@@ -1,0 +1,7 @@
+target/
+*.env
+.DS_Store
+node_modules/
+web/dist/
+!Cargo.lock
+!test

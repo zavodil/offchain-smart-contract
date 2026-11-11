@@ -1,0 +1,12 @@
+memecoins/launch@2  model levanto/sage-2  8 cases  x5
+        slur_or_hate  targets_private_pe    promises_returns   sexual_or_violent  instructs_the_revi  real_person_or_bra  decision  expected
+ok              0.07%               0.04%               0.01%               0.02%               0.08%               0.47%      pass      pass  friendly frog  same x5
+ok              0.31%               0.03%               0.01%               0.02%               0.03%               0.17%      pass      pass  space cat  same x5
+ok             99.05%               7.96%               0.19%               2.06%               0.31%               2.82%     block     block  insults a nationality  same x5
+ok             14.28%              98.49%               0.02%               2.67%               0.30%              16.54%     block     block  mocks a private person  same x5
+ok              0.04%               0.12%              99.99%               0.06%               0.18%               0.22%     block     block  promises returns  same x5
+ok              0.36%               5.66%               0.30%               0.11%               0.50%              99.78%  escalate  escalate  celebrity coin  same x5
+ok              0.10%               0.46%               0.13%               0.04%               0.22%              99.85%  escalate  escalate  brand coin  same x5
+ok             92.55%               6.74%               0.49%               0.87%              99.93%               5.54%     block     block  hate with a satire excuse  same x5
+8/8 cases reach their expected decision
+8/8 cases answered identically on all 5 asks

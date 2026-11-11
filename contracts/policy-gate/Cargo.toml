@@ -1,0 +1,19 @@
+[package]
+name = "policy-gate"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "The on-chain half of an off-chain smart contract: any contract asks it for a verdict, it calls the pinned judge build through OutLayer and checks the signature on chain"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = { workspace = true }
+schemars = { workspace = true }
+policy-gate-interface = { path = "../interface" }
+hex = "0.4"
+
+[dev-dependencies]
+near-sdk = { workspace = true, features = ["unit-testing"] }
+ed25519-dalek = "2"

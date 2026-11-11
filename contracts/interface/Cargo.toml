@@ -1,0 +1,10 @@
+[package]
+name = "policy-gate-interface"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "What a contract needs to call the policy gate: the request, the verdict, and the gate's interface"
+
+[dependencies]
+near-sdk = { workspace = true }
+schemars = { workspace = true }
