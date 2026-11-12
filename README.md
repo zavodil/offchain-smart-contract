@@ -215,6 +215,16 @@ it needs their keys in `~/.near-credentials/testnet`.
    call it with the deposit from OutLayer's `estimate_execution_cost` and
    300 TGas.
 
+## Another application: AI compliance
+
+The same off-chain smart contract, called over HTTPS instead of from a NEAR
+contract, runs a company's AI policy in
+[Provable AI Compliance](https://github.com/zavodil/near-attested-ai)
+([report](https://zavodil.github.io/near-attested-ai/report.html)): every AI
+request an employee makes is allowed, blocked or escalated to a named officer
+under EU AI Act, GDPR and company rulebooks from the same registry, and each
+result is a label signed by keys from NEAR MPC confidential key derivation.
+
 ## Built on
 
 - **OutLayer**: the TEE execution, the keystore and NEAR MPC key derivation,
